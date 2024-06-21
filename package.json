@@ -16,5 +16,8 @@
 		"express",
 		"freecodecamp"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"resolutions": {
+		"ms": "2.1.3"
+	}
 }
