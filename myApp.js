@@ -6,6 +6,9 @@ app.use(helmet.hidePoweredBy())
 
 app.use(helmet.frameguard({action: 'deny'}))
 
+app.use((req, res, next) => {
+  helmet.xssFilter()(req, res, next);
+});
 
 
 
